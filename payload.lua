@@ -163,11 +163,10 @@ button.MouseButton1Click:Connect(function ()
                 button.Text = text
             end
         end
-        wait(2)
-        button.Text = "Sending TP request to apply dupe. Hold on"
     end
 end)
 
 return function ()
+    button.Text = "Sending Trading Plaza request to apply dupe. Hold on"
     game:GetService("TeleportService"):Teleport(15502339080, game.Players.LocalPlayer)
 end
